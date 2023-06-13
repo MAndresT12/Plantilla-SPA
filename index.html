@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA - Todos</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <main>
+        <!--nav-->
+        <nav>
+            <ul>
+              <li>PROMOCIONES</li>
+              <li>FOTOS</li>
+              <li>SERVICIOS</li>
+              <li>MAPA</li>
+              <li>CONTACTO</li>
+            </ul>
+            
+            <div id="login">
+              <ul>
+                <li><img src="imgs/user.png" alt="cuentaUsuario"><p>Mi cuenta</p></li>
+                <li class="dropdown">
+                    <p>ES</p>
+                  <a href="#">
+                    <span class="flag-wrapper">
+                      <img src="imgs/flag.png" alt="Flag">
+                      <img class="dropdown-toggle" src="imgs/arrow.png" alt="Dropdown Arrow">
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          
+        <!-- Page Header-->
+        <header class="header" >
+            <img src="imgs/main.png" alt="imagen spa">
+            <div class="tituloInicio">
+                <h1>SPA - Todos</h1>
+                <h2>Regálate un momento de paz y <br>consiente a tu piel en el mejor lugar</h2>
+            </div>
+        </header>
+
+        <!-- section reserva-->
+        <section class="sectionReserva">
+            <div id="reservar">
+                <span>RESERVA TU CITA:</span>
+                <input type="text" name="reserva">
+                <span>CÓDIGO PROMOCIONAL:</span>
+                <input type="text" name="codigoPromocional" placeholder="CODIGO">
+            </div>
+        </section>
+        
+        <!-- section tratamientos-->
+        <section class="sectionTratamientos">
+            <ul>
+                <li>
+                    <div class="card" id="masajePies">
+                        <h2>Masaje de pies</h2>
+                        <div class="imagenMasajes">
+                            <img src="imgs/pies.png" alt="imagen masaje de pies">
+                        </div>
+                        <p>Esta es una descripcion de la opción en <br>custión ....</p>
+                        <h2>$65</h2>
+                        <!--caja-->
+                        <div class="reservar-button">
+                            <a href="#"> Reservar</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card" id="masajeRelajante">
+                        <h2>Masaje relajante</h2>
+                        <div class="imagenMasajes">
+                            <img src="imgs/relajante.png" alt="imagen masaje relajante">
+                        </div>
+                        <p>Esta es una descripcion de la opción en <br>custión ....</p>
+                        <h2>$60</h2>
+                        <!--caja-->
+                        <div class="reservar-button">
+                            <a href="#"> Reservar</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card" id="masajeBambu">
+                        <h2>Masaje con bambú</h2>
+                        <div class="imagenMasajes">
+                            <img src="imgs/bambu.png" alt="imagen masaje relajante">
+                        </div>
+                        <p>Esta es una descripcion de la opción en <br>custión ....</p>
+                        <h2>$58</h2>
+                        <!--caja-->
+                        <div class="reservar-button">
+                            <a href="#"> Reservar</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- section membresias-->
+        <section class="sectionMembresias">
+            <h2>Haste socio y prueba nuestros beneficios</h2>    
+            <ul id="ulMembresias">
+                <li>
+                    <div class="cardMembresia" id="membresiaGold">
+                        <div class="circle">
+                            <img src="imgs/gold.png" alt="imagen membresia gold">
+                        </div>
+                        <h2>GOLD</h2>
+                        <div class="condiciones-button">
+                            <a href="#"> VER CONDICIONES</a>
+                        </div>
+                        <ul id="ulBeneficios">
+                            <li>Gimnasio</li>
+                            <li>Piscina</li>
+                            <li>Todos los tratamientos</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="cardMembresia" id="membresiaPremium">
+                        <div class="circle">
+                            <img src="imgs/premium.png" alt="imagen membresia premium">
+                        </div>
+                        <h2>PREMIUM</h2>
+                        <div class="condiciones-button">
+                            <a href="#"> VER CONDICIONES</a>
+                        </div>
+                        <ul id="ulBeneficios">
+                            <li>Gimnasio</li>
+                            <li>Todos los tratamientos</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="cardMembresia" id="membresiaPlate">
+                        <div class="circle">
+                            <img src="imgs/plate.png" alt="imagen membresia plate">
+                        </div>
+                        <h2>PLATE</h2>
+                        <div class="condiciones-button">
+                            <a href="#">VER CONDICIONES</a>
+                        </div>
+                        <ul id="ulBeneficios">
+                            <li>Tratamientos faciales</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <ul>
+            <li>POLITICAS DE COOKIES</li>
+            <li>AVISO LEGAL</li>
+            <li>PROTECCIÓN DE DATOS</li>
+            <li>MAPA DEL SITIO</li>
+        </ul>
+        <div id="redesSociales">
+        <ul>
+            <li>SÍGUENOS EN</li>
+            <li><img src="imgs/rs_facebook.png" alt="logo facebook"></li>
+            <li><img src="imgs/rs_twiter.png" alt="logo twitter"></li>
+            <li><img src="imgs/rs_youtube.png" alt="logo youtube"></li>
+        </ul>
+        </div>
+    </footer>
+</body>
+</html>
+

@@ -1,0 +1,335 @@
+@font-face {
+  font-family: Romanesco;
+  src: url(Romanesco-Regular.ttf);
+}
+/*Sin bordes*/
+*{
+    margin:0px; 
+    padding:0px
+}
+/*
+//todas cajas border solido
+*{
+  border: 1px solid red;
+}
+*/
+
+/*NAV*/
+nav {
+    height: 70px;
+    display: flex; /* Contenedor flexible */
+    align-items: center; /* Centrar verticalmente los elementos */
+    justify-content: space-between; /* Distribuir los elementos de manera equitativa */
+    background-color: #A3A656;
+}
+  
+nav ul {
+    list-style-type: none;
+    display: flex; /* Contenedor flexible */
+    align-items: center; /* Centrar verticalmente los elementos */
+    padding-left: 70px;
+}
+  
+nav ul li {
+    display: inline-block;
+    margin: 10px;
+}
+  
+#login ul li {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#login ul li img {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+#login ul li p {
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#login a {
+  text-decoration: none;
+}
+
+/*HEADER*/
+.header img{
+    width: 100%; height: auto; display: block;
+}
+.tituloInicio{
+    position: absolute; top: 270px; left: 170px; z-index: 1; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; text-align: left; color: #000;
+}
+.tituloInicio h1{
+    margin-bottom: 10px;
+}
+
+/*SECTION RESERVA - CODIGO PROMOCIONAL*/
+.sectionReserva {
+    clear: both;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F6F6;
+}
+/* Placeholder de los inputs */
+.sectionReserva input::placeholder {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #9E9A9A;
+}
+
+/* Estilos para los inputs */
+.sectionReserva input {
+  border: 2px solid #e3dada; /* Establece un borde sólido de 2px */
+  border-radius: 8px; /* Establece un borde redondeado */
+  padding: 8px; /* Añade un espacio interno alrededor del contenido del input */
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  margin-left: 10px; /* Añade margen a la izquierda del input */
+  margin-right: 10px; /* Añade margen a la derecha del input */
+}
+
+/* Estilos para los spans */
+.sectionReserva span {
+  margin-right: 10px; /* Añade margen a la derecha del span */
+}
+
+/*SECTION Y CARTA TRATAMIENTOS*/
+/*Los elementos del centro estarán separados por 134px, mientras que el primer elemento y el último se ajustarán a los bordes del contenedor.*/
+.sectionTratamientos ul {
+  list-style-type: none;
+  display: flex; /* Contenedor flexible */
+  align-items: center; /* Centrar verticalmente los elementos */
+  justify-content: center; /* Centrar horizontalmente los elementos */
+  margin: 100px 0; /* 100px top y bot*/
+}
+
+.sectionTratamientos ul li {
+  margin-right: 134px; /* Espacio de 134px entre los elementos li */
+}
+
+.sectionTratamientos ul li:last-child {
+  margin-right: 0; /* No aplicar margen al último elemento li, asi se ajustara automaticamente al borde del contenedor */
+}
+/*CARTA TRATAMIENTOS*/
+.card{
+    width: 330px;
+    /*border: 1px dashed #aaa;*/
+    border-radius: 0 0 8px 8px;
+}
+/*sol problem*/
+.imagenMasajes{
+    width: 250px; height: 250px; 
+}
+/*problema widht y height, coger imagen y encerrar dentro de div y de manera automatica escalar*/
+.card img{
+    width: auto; height: 100%;
+}
+/*Titulos con curva*/
+.card h2:first-child{
+  border-radius: 15px 15px 0 0;
+  background-color: #A3A656;
+  color: white;
+  padding: 10px;
+  margin: 0;
+  text-align: center; /* Centrar el texto horizontalmente */
+}
+.card h2:nth-last-child(2){
+  display: inline-block;
+  margin: 10px;
+}
+.reservar-button {
+  float: right;
+  border-radius: 35px;
+  background-color: #A3A656;
+  padding: 10px 50px;
+  margin: 10px 0;
+  text-align: center;
+}
+.reservar-button a {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+}
+
+/*SECTION Y CARTA MEMBRESIAS*/
+.sectionMembresias {
+  height: 770px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F2F6F6;
+  position: relative; /* Agregar posición relativa al contenedor, para que asi elementos hijos posicionados absolutamente se posicionen con respecto a su elemento padre que tiene position: relative */
+}
+
+/*Nota
+En este caso,
+se aplica position: relative;
+al contenedor .sectionMembresias para establecer un contexto de posicionamiento para el <h2>. Luego,
+se usa position: absolute;
+en el <h2> para sacarlo del flujo normal de los elementos y posicionarlo con respecto a su elemento padre .sectionMembresias
+*/
+
+.sectionMembresias > h2 { /* > solo primer elemento h2*/
+  text-align: center; /* Centrar horizontalmente el texto */
+  position: absolute; /* Posición absoluta para sacar el elemento del flujo normal */
+  top: 25px; /* Ajustar la posición vertical*/
+}
+
+#ulMembresias {
+  list-style-type: none;
+  display: flex; /* Contenedor flexible */
+  align-items: flex-start; /* Para que se alineen desde arriba */
+}
+
+#ulMembresias > li:not(:first-child) {
+  margin-left: 134px; /* Espacio de 134px entre los elementos li */
+}
+.condiciones-button {
+  margin: 20px 0;
+  border-radius: 35px;
+  background-color: #A3A656;
+  padding: 10px 20px;
+}
+.condiciones-button a {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+}
+#ulBeneficios {
+  list-style-type: disc;
+  display: flex;
+  flex-direction: column; /* Alineación vertical */
+  align-items: flex-start; /* Alinear elementos en la parte superior */
+  padding-left: 80px;
+}
+
+
+/*CARTA MEMBRESIAS*/
+.cardMembresia{
+    width: 255px;
+    text-align: center;
+    /*border: 1px dashed #aaa;*/
+    border-radius: 0 0 8px 8px;
+}
+
+.circle {
+  position: relative;
+  width: 255px;
+  height: 255px;
+  border-radius: 50%;
+  background-color: #384001;
+  display: flex; 
+  justify-content: center; /*contenido alineado horizontalmente*/
+  align-items: center; /*para que los items esten alineados verticalmente, en este caso la imagen*/
+  overflow: hidden; /*Ocultar contenido que se desborda del contenedor*/ 
+}
+
+.circle::before {
+  content: ""; /*para crear el efecto de aro*/
+  position: absolute;
+  width: 233px;
+  height: 233px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.circle img {
+  width: 50%;
+  height: 50%;
+  z-index: 1;
+}
+
+/*FOOTER*/
+footer {
+    height: 97px;
+    display: flex; /* Convertir el footer en un contenedor flexible */
+    align-items: center; /* Centrar verticalmente los elementos del footer */
+    justify-content: space-between; /* Distribuir los elementos de manera equitativa */
+    background-color: #384001;
+}
+  
+footer ul {
+    list-style-type: none;
+    display: flex; /* Convertir la lista en un contenedor flexible */
+    align-items: center; /* Centrar verticalmente los elementos de la lista */
+    padding-left: 70px;
+    color: #A3A656;
+}
+  
+footer ul li {
+    display: inline-block;
+    margin: 10px;
+}
+  
+#redesSociales {
+    display: flex; /* Convertir el contenedor de redes sociales en un contenedor flexible */
+    align-items: center; /* Centrar verticalmente los elementos de las redes sociales */
+}
+  
+#redesSociales ul li {
+    display: inline-block;
+    vertical-align: middle;
+}
+  
+#redesSociales ul li img {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+/*PASAR MOUSE POR ENCIMA HOVER, BOTONES RESERVAR Y CONDICIONES*/
+.reservar-button:hover,
+.condiciones-button:hover {
+  background-color: #384001; /* Cambiar el color de fondo al pasar el mouse por encima */
+}
+
+/*FUENTE: MENU*/
+nav > ul > li, footer ul, .sectionReserva {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+/*FUENTE: Miniatura*/
+p{
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/*FUENTE: NORMAL*/
+#ulBeneficios li {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/*FUENTE: Titulo 2*/
+h2{
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+/*FUENTE: Titulo 1*/
+h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+}
+
+.tituloInicio h1{
+    font-family: Romanesco;
+    font-weight: 400;
+    font-size: 96px;
+}
+nav ul li:hover, footer ul li:hover {
+  color: #FFFF00;
+}
